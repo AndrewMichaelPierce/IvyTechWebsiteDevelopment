@@ -1,0 +1,32 @@
+h1 {
+    background-color: #000033;
+    color: white;
+    font-family: sans-serif;
+    line-height: 200%;
+}
+
+nav {
+    background-color: #90C7E3;
+    color: #5C7FA3;
+    font-weight: bold;
+}
+
+h2 {
+    color: #3399CC;
+}
+
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: .60em;
+}
+
+dt {
+    font-weight: bold;
+}
