@@ -1,0 +1,29 @@
+body {
+    background-color: #FCEBB6;
+    color: #221811;
+}
+
+h1 {
+    background-color: #D2B48C;
+    text-align: center;
+    line-height: 200%;
+    font-family: sans-serif;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #D2B48C;
+    font-size: .60em;
+    text-align: center;
+    font-style: italic;
+}
+
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
