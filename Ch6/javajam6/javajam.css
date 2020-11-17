@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+#heroroad {
+    background-image: url("img/heroroad.jpg");
+    background-size: 100%;
+    height: 250px;
+}
+
+#heromugs {
+    background-image: url("img/heromugs.jpg");
+    background-size: 100%;
+    height: 250px;
+}
+
+#heroguitar {
+    background-image: url("img/heroguitar.jpg");
+    background-size: 100%;
+    height: 250px;
+}
+
+body {
+    background-color: #FCEBB6;
+    color: #221811;
+    background-image: url(img/background.gif);
+}
+
+header {
+    background-image: url(img/javajamlogo.jpg);
+    background-repeat: no-repeat;
+    background-color: #D2B48C;
+    height: 150px;
+    font-family: sans-serif;
+}
+
+h1 {
+    padding-top: 45px;
+    padding-left: 220px;
+    font-size: 3em;
+    float: none;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 10px;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #D2B48C;
+    font-size: .60em;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-top: #221811;
+}
+
+#wrapper {
+    background-color: #231814;
+    min-width: 900px;
+    max-width: 1280px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 10px #221811;
+}
+
+main {
+    display: block;
+    margin-left: 200px;
+    padding: 0 0 2em 0;
+    background-color: #FEF6C2;
+}
+
+main h1 h2 h3 h4 p div ul dl {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav a:link {
+    color: #FEF6C2;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #CC9933
+}
+
+header, nav, main, footer {
+    display: block;
+}
