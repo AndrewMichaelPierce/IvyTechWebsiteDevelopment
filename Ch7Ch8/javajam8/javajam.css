@@ -131,6 +131,22 @@ header, nav, main, footer {
     display: block;
 }
 
+table {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-spacing: 0;
+    background-color: #FEF6C2;
+}
+
+td, th {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.altrow {
+    background-color: #D2B48E;
+}
+
 @media only screen and (max-width: 1024px) {
     body {
         margin: 0 0 0 0;
