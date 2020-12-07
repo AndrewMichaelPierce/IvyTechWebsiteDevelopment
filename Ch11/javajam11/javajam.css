@@ -309,6 +309,11 @@ input, textarea{
     background-size: 100% 100%;
 }
 
+audio {
+    display: block;
+    margin-top: 1em;
+}
+
 #mobile {display: none}
 
 #desktop {display: inline}
