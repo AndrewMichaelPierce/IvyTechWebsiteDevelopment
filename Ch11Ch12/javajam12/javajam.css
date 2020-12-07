@@ -153,6 +153,50 @@ td, th {
     background-color: #D2B48E;
 }
 
+form {
+    padding: 2em;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit {
+    margin-left: 9.5em;
+}
+
+#heroJobs {
+    height: 250px;
+    background-image: url("img/herojobs.jpg");
+    background-size: 100% 100%;
+}
+
+audio {
+    display: block;
+    margin-top: 1em;
+}
+
+.item {
+    background-color: #FAF9F7;
+    margin: 2em 3em;
+    width: 80%;
+    padding: 1em;
+    overflow: auto;
+}
+
+.gearPic {
+    float: right;
+}
+
 @media only screen and (max-width: 1024px) {
     body {
         margin: 0 0 0 0;
@@ -230,10 +274,6 @@ td, th {
         height: 128px;
     }
 
-    #heroJobs {
-        display: none;
-    }
-
     h1 {
         font-size: 2em;
         text-align: center;
@@ -269,7 +309,7 @@ td, th {
         padding-right: 0;
     }
 
-    #heroroad, #heromugs, #heroguitar {
+    #heroroad, #heromugs, #heroguitar, #herocouch, #heroJobs {
         background-image: none;
         height: auto;
     }
@@ -279,6 +319,10 @@ td, th {
         padding-right: 0.5em;
     }
 
+    .gearPic {
+        float: none;
+    }
+
     #mobile {
         display: inline;
     }
@@ -286,46 +330,6 @@ td, th {
     #desktop {
         display: none;
     }
-}
-
-form {
-    padding: 2em;
-}
-
-label {
-    float: left;
-    display: block;
-    text-align: right;
-    width: 8em;
-    padding-right: 1em;
-}
-
-input, textarea{
-    display: block;
-    margin-bottom: 1em;
-}
-
-#mySubmit {
-    margin-left: 9.5em;
-}
-
-#heroJobs {
-    height: 250px;
-    background-image: url("img/herojobs.jpg");
-    background-size: 100% 100%;
-}
-
-audio {
-    display: block;
-    margin-top: 1em;
-}
-
-.item {
-    background-color: #FAF9F7;
-    margin: 2em 3em;
-    width: 80%;
-    padding: 1em;
-    overflow: auto;
 }
 
 #mobile {display: none}
