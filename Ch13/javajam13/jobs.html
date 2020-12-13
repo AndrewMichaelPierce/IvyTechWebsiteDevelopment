@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaJam Coffee House - Jobs</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="javajam.css">
+    <meta name="description" content="JavaJam Coffee House, now accepting applications for friendly staff with a passion
+    for coffee, making pastries, local music and outstanding customer service.">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>JavaJam Coffee House</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href=index.html>Home</a>
+                </li>
+                <li>
+                    <a href=menu.html>Menu</a>
+                </li>
+                <li>
+                    <a href=music.html>Music</a>
+                </li>
+                <li>
+                    <a href=jobs.html>Jobs</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="heroJobs"></div>
+            <h2>Jobs at JavaJam</h2>
+        <p>Want to work at JavaJam? Fill out the form below to start your application.<br>
+            Required fields are marked with an asterisk (*).</p>
+            <form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+                <label for="myName">*Name:</label>
+                <input type="text" name="myName" id="myName" required="required">
+                <label for="myEmail">*E-Mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required">
+                <label for="myExperience">*Experience:</label>
+                    <textarea name="myExperience" id="myExperience" rows="2" cols="20"
+                    required="required"></textarea>
+                <input id="mySubmit" type="submit" value="Apply Now">
+            </form>
+        </main>
+
+        <footer>
+            Copyright &copy; 2018 JavaJam Coffee House
+            <address>
+                    <a href="mailto:andrew@andrewmpierce.com">andrew@andrewmpierce.com</a>
+            </address>
+        </footer>
+    </div>
+</body>
+
+</html>
