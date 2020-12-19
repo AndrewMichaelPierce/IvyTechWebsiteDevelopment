@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, intital-scale=1.0">
     <link rel="stylesheet" href="starterchess.css">
     <title>Starter Chess - Moving the Pieces</title>
+    <meta name="description" content="Starter Chess is the best site for new players, learn how the king, queen, rook
+    bishop, knight and pawn move.">
 </head>
 <body>
     <div id="wrapper">
         <header>
             <h1>Starter Chess</h1>
         </header>
-        <nav>
+        <nav class="mainNav">
             <ul>
+                <li>
+                    <a href=howToPlay.html>How to Play</a>
+                </li>
                 <li>
                     <a href=basicTactics.html>Basic Tactics</a>
                 </li>
                 <li>
                     <a href=famousGame.html>Famous Game</a>
-                </li>
-                <li>
-                    <a href=howToPlay.html>How to Play</a>
                 </li>
                 <li>
                     <a href=letsPlay.html>Let's Play!</a>
@@ -34,10 +36,10 @@
                         <a href=boardSetup.html>Board Setup</a>
                     </li>
                     <li>
-                        <a href=castlingAndEnPassant.html>Special Moves</a>
+                        <a href=howToMoveThePieces.html>The Pieces</a>
                     </li>
                     <li>
-                        <a href=howToMoveThePieces.html>The Pieces</a>
+                        <a href=castlingAndEnPassant.html>Special Moves</a>
                     </li>
                     <li>
                         <a href=checkmate.html>Checkmate</a>
@@ -45,27 +47,35 @@
                 </ul>
             </nav>
             <h2>How to Move the Pieces</h2>
-            <h3>King</h3>
-                <p>The king can move one square in any direction as long as it is not obstructed by one of it's own
+
+            <h3>King<img src="img/kingMoves.png" style="height:150px;float:right"></h3>
+                <p>The king can move one square in any
+                    direction as long as it is not obstructed by one of it's own
                 pieces.  When taking an enemy piece, it replaces the piece on the square the enemy piece occupies.
                 It may not move into onto a square under attack by another piece.  If the square the king sits on
                 is under attack, it must: move, take the enemy piece, another friendly piece must take the enemy piece
                 or, if possible, a friendly piece may block the attack of the enemy piece by standing in it's way.
                 There must always be one square between the two kings.</p>
-            <h3>Queen</h3>
+            <h3>Queen<img src="img/queenMoves.png" style="float:left; height:150px; display:block"></h3>
                 <p>The queen can move any direction (horizontal, vertical or diagonal) from the square it starts on
                 but unlike the king it can move any number of squares unless it is blocked by a friendly piece or the
                 edge of the board.  Like the king, when taking a piece it replaces the piece on the square the enemy
                 piece was sitting on.</p>
-            <h3>Rook</h3>
+            <br class="bigBreak">
+            <br class="bigBreak">
+            <h3>Rook<img src="img/rookMoves.png" style="float:right; height:150px"></h3>
                 <p>The rook is like the queen but may not move on the diagonals but can move as many spaces as
                 possible on the horizontal or vertical rows in relation to the square it is sitting on.</p>
-            <h3>Bishop</h3>
+            <br class="bigBreak">
+            <br class="bigBreak">
+            <h3>Bishop<img src="img/bishopMove.png" style="float:left; height:150px"></h3>
                 <p>The bishop is like the queen but unlike the rook it is confined to the diagonals.  When starting
                 a game a player will have one bishop that starts on a light square and one bishop that starts on the
                 dark square.  Since the bishops only ever move on the diagonals, the light and dark square bishops
                 are forever stuck to the squares of those colors.</p>
-            <h3>Knight</h3>
+            <br class="bigBreak">
+            <br class="bigBreak">
+            <h3>Knight<img src="img/knightMoves.png" style="float:right; position:relative; height:150px; display:block"></h3>
                 <p>Unlike any other piece on the chessboard, the knight can jump over pieces.  It's movement is also
                 the most complex to grasp by new players.  When it moves/attacks it always starts on a light square
                 and ends on a dark square or vise versa.  The knight moves in an "L" shape and can move two squares
@@ -73,14 +83,16 @@
                 and then one square up or down.  At most, the knight attacks/defends eight squares when placed in
                 the middle of the board, four squares on most edge squares and only two squares if it is standing in
                 one of the four corners of the chessboard.</p>
-            <h3>Pawn</h3>
+            <h3>Pawn<img src="img/pawnFirstMove.png" style="float:left; height:150px">
+                <img src="img/pawnAttack.png" style="float:right; height:150px"></h3>
                 <p>The pawn is just a pawn and is not considered a piece.  The pawns start on the second rank of the
                 chessboard and only move forward.  On each pawns initial move, the player has the option of moving it
                 either one or two squares forward.  Any subsequent moves are one square at a time.  When it take an
                 enemy piece or pawn, it can only do so if the piece or pawn is standing on the immediate square on the
                 forward left or right diagonal.  If a piece or pawn blocks it from moving forward, it can not move.
                 When a pawn reaches the opposite side of the board the player must immediately turn it into any piece
-                except for a king or another pawn.</p>
+                except for a king or another pawn.
+                </p>
         </main>
 
         <footer>

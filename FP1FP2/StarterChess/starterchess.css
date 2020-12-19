@@ -2,34 +2,15 @@
     box-sizing: border-box;
 }
 
-#heroroad {
-    /*background-image: url("img/");*/
-    background-size: 100% 100%;
-    height: 250px;
-}
-
-#heromugs {
-    /*background-image: url("img/");*/
-    background-size: 100% 100%;
-    height: 250px;
-}
-
-#heroguitar {
-    /*background-image: url("img/");*/
-    background-size: 100% 100%;
-    height: 250px;
-}
-
 body {
-    background-color: #769656;
+    background-color: #B0C6CE;
     color: black;
-    /*background-image: url("img/");*/
 }
 
 header {
-    /*background-image: url("img/");*/
+    background-image: url("img/starterChessLogo.png");
     background-repeat: no-repeat;
-    background-color: #312e2b;
+    background-color: #769656;
     height: 150px;
 }
 
@@ -55,7 +36,7 @@ h4 {
     clear: left;
 }
 
-nav {
+.mainNav {
     float: left;
     width: 200px;
     text-align: center;
@@ -64,17 +45,37 @@ nav {
     padding-top: 10px;
 }
 
-nav ul {
+nav {
+    float: none;
+    column-count: auto;
+    width: auto;
+    padding-top: 0;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 1em;
+    width: 8em;
+    font-weight: bold;
+    border-style: none;
+}
+
+.mainNav ul, nav {
     list-style-type: none;
     padding-left: 0;
 }
 
-nav a {
+.mainNav a, nav {
     text-decoration: none;
 }
 
 footer {
-    background-color: #D2B48C;
+    background-color: #769656;
     font-size: .60em;
     text-align: center;
     font-style: italic;
@@ -115,19 +116,31 @@ img {
     padding-right: 10px;
 }
 
-nav a:link {
+.mainNav a:link {
     color: #FEF6C2;
 }
 
+nav a:link {
+    color: #769656;
+}
+
+.mainNav a:visited {
+    color: #769656;
+}
+
 nav a:visited {
-    color: #D2B48C;
+    color: #221811;
+}
+
+.mainNav a:hover {
+    color: #646536
 }
 
 nav a:hover {
-    color: #CC9933
+    color: #646536
 }
 
-header, nav, main, footer {
+header, .mainNav, main, footer, nav {
     display: block;
 }
 
@@ -145,6 +158,23 @@ td, th {
 
 .altrow {
     background-color: #D2B48E;
+}
+
+#chessNotation {
+    margin: auto;
+}
+
+#chessNotation tr:nth-child(even) {
+    background-color: #769656;
+}
+
+#chessNotation tr:nth-child(odd) {
+    background-color: #FEF6C2;
+}
+
+#chessNotation th {
+    background-color: #221811;
+    color: #769656;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -172,7 +202,7 @@ td, th {
         font-size: 2.5em;
     }
 
-    nav {
+    .mainNav, nav {
         float: none;
         column-count: auto;
         width: auto;
@@ -181,18 +211,18 @@ td, th {
         font-size: 1.3em;
     }
 
-    nav li {
+    .mainNav li, nav li {
         display: inline-block;
     }
 
-    nav a {
+    .mainNav a, nav a {
         padding: 1em;
         width: 8em;
         font-weight: bold;
         border-style: none;
     }
 
-    nav > ul {
+    .mainNav > ul, nav > ul {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
     }
@@ -220,7 +250,7 @@ td, th {
 
 @media only screen and (max-width: 768px) {
     header {
-        /*background-image: url(img/javajammini.jpg);*/
+        background-image: url(img/starterChessLogo.png);
         height: 128px;
     }
 
@@ -230,18 +260,18 @@ td, th {
         padding-left: 0;
     }
 
-    nav {
+    .mainNav, nav {
         margin: 0;
     }
 
-    nav a {
+    .mainNav a, nav a {
         display: block;
         padding: 0.2em;
         width: auto;
         border-bottom: 2px #FEF6C2;
     }
 
-    nav li {
+    .mainNav li, nav li {
         display: block;
     }
 
@@ -257,11 +287,6 @@ td, th {
     .details {
         padding-left: 0;
         padding-right: 0;
-    }
-
-    #heroroad, #heromugs, #heroguitar {
-        background-image: none;
-        height: auto;
     }
 
     .floatleft {

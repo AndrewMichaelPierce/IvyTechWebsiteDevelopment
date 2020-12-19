@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, intital-scale=1.0">
     <link rel="stylesheet" href="starterchess.css">
     <title>Starter Chess - Lets Play!</title>
+    <meta name="description" content="Starter Chess is the best site for new players, learn where to play chess
+    online.">
 </head>
 <body>
     <div id="wrapper">
         <header>
             <h1>Starter Chess</h1>
         </header>
-        <nav>
+        <nav class="mainNav">
             <ul>
+                <li>
+                    <a href=howToPlay.html>How to Play</a>
+                </li>
                 <li>
                     <a href=basicTactics.html>Basic Tactics</a>
                 </li>
                 <li>
                     <a href=famousGame.html>Famous Game</a>
-                </li>
-                <li>
-                    <a href=howToPlay.html>How to Play</a>
                 </li>
                 <li>
                     <a href=letsPlay.html>Let's Play!</a>
@@ -33,16 +35,27 @@
             or family member that is also interested.  However there are also many online options and you
             can also play by e-mail.</p>
             <h3>Chess.com</h3>
-            <p>Chess.com has been around for about fifteen years and has wonderful resources for new players!
+            <p><a href="https://www.chess.com">Chess.com</a> has been around for about fifteen years and has wonderful resources for new players!
             Beginning a game on this site is easy and there are a lot of tools to improve your chess.</p>
             <h3>lichess.org</h3>
-            <p>lichess.org has been around for about five years but has quickly grown in stature in the
+            <p><a href="https://www.lichess.org">lichess.org</a> has been around for about five years but has quickly grown in stature in the
             chess community.  With a slick interface and cash prize tournaments for titled players, lichess.org has been
             a destination for serious chess players for several years now.</p>
             <h3>United States Chess Federation</h3>
-            <p>The USCF has been the United States' governing body for over-the-board chess tournaments since 1939.
+            <p>The <a href="https://new.uschess.org">USCF</a> has been the United States' governing body for over-the-board chess tournaments since 1939.
             With their website you can find a tournament in your area and get started in tournaments at your playing
             level!</p>
+            <h3>starterchess.com</h3>
+            <p>Starter Chess will also be hosting games soon as well. Keep the interest going by simply rating our site
+            below with 100 being the highest!</p>
+            <div style="margin:auto">
+            <form method="get" id="siteRating">
+                <label for="siteRating">Choose a number between 1 and 100:</label><br>
+                Low <input type="range" id="theirRating" min="1" max="100"> High
+                <br><br>
+                <input type="submit" value="Send"> <input type="reset">
+            </form>
+            </div>
         </main>
 
         <footer>
@@ -54,5 +67,12 @@
 
         </footer>
     </div>
+    <script>
+        let slider = document.getElementById("theirRating")
+        document.getElementById("siteRating").addEventListener("submit", sayThankYou);
+        function sayThankYou() {
+            alert("Thank you for your interest and your vote of " + slider.value + "!");
+        }
+    </script>
 </body>
 </html>

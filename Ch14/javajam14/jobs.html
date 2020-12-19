@@ -35,9 +35,9 @@
             <h2>Jobs at JavaJam</h2>
         <p>Want to work at JavaJam? Fill out the form below to start your application.<br>
             Required fields are marked with an asterisk (*).</p>
-            <form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
-                <label for="myName">*Name:</label>
-                <input type="text" name="myName" id="myName" required="required">
+            <form name=newsletter method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+                <label for="name">*Name:</label>
+                <input type="text" name="myName" id="myName"">
                 <label for="myEmail">*E-Mail:</label>
                 <input type="email" name="myEmail" id="myEmail" required="required">
                 <label for="myExperience">*Experience:</label>
@@ -53,6 +53,15 @@
                     <a href="mailto:andrew@andrewmpierce.com">andrew@andrewmpierce.com</a>
             </address>
         </footer>
+        <script>
+            function validateForm() {
+                let name = document.forms["newsletter"]["name"].value;
+                if (name === false) {
+                    alert("Name must be filled out");
+                    return false;
+                }
+            }
+        </script>
     </div>
 </body>
 
